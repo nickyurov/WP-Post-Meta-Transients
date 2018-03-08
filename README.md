@@ -11,7 +11,7 @@ Unlike the default Transients API, the WP Post Meta Transients stores the data i
 ### Saving Transients
 To save a post transient you use pm_set_transient() :
 
-`set_transient( $post_id, $key, $data, $expiration );`
+`pm_set_transient( $post_id, $key, $data, $expiration );`
 
 **$post_id**
 
@@ -32,7 +32,7 @@ To save a post transient you use pm_set_transient() :
 ### Fetching Transients
 To get a saved post transient you use pm_get_transient() :
 
-`get_transient( $post_id, $key );`
+`pm_get_transient( $post_id, $key );`
 
 **$post_id**
 
@@ -66,7 +66,7 @@ if ( empty( $some_data ) ) {
 	$some_data = get_posts( array( 'post_type' => 'article' ) ); // any expensive query
 
 	if ( $some_data ) {
-  	set_transient( $post_id, 'saved_data', $some_data, DAY_IN_SECONDS );
+		pm_set_transient( $post_id, 'saved_data', $some_data, DAY_IN_SECONDS );
 	}
 }
 ```
