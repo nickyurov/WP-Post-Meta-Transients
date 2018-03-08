@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Post Meta Transients
- * Plugin URI:
+ * Plugin URI: https://github.com/nickyurov/WP-Post-Meta-Transients
  * Version: 1.0
  * Author: Nick Yurov
  * Author URI: https://nickyurov.com/
